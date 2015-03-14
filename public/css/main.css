@@ -1,0 +1,342 @@
+/*! normalize.css v1.0.0 | MIT License | git.io/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: .83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: .75em;
+  margin: 2.33em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+p, pre {
+  margin: 1em 0; }
+
+code, kbd, pre, samp {
+  font-family: monospace,serif;
+  _font-family: 'courier new',monospace;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 75%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+dl, menu, ol, ul {
+  margin: 1em 0; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+menu, ol, ul {
+  padding: 0 0 0 40px; }
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+form {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  /*outline: 1px dotted blue;*/
+  box-sizing: border-box; }
+
+/*html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}*/
+.main-headline {
+  padding-left: 50px;
+  font-size: 3rem; }
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 28px; }
+
+.nav-link-cont {
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  border: 2px solid black;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-right: 5px;
+  margin-left: 5px; }
+
+.nav-link {
+  padding-top: 5px;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  color: black;
+  text-decoration: none; }
+
+/*    HOME CONTENT    */
+.clarity-container {
+  height: 300px;
+  width: 100%;
+  background: url("http://www.torange.us/photo/20/13/Clear-sky-1363594685_18.jpg");
+  background-repeat: no-repeat;
+  border-top: 2px solid #0a5e66;
+  border-bottom: 2px solid #0a5e66;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.home-clarity {
+  margin: 0 auto;
+  height: 150px; }
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%; }
+
+.home-sub-headline-cont {
+  margin-top: 100px; }
+
+.home-sub-headline {
+  margin-left: 135px; }
+
+.home-photo-block {
+  float: left; }
+
+.home-text-block {
+  width: 50%;
+  float: right; }
+
+.home-main-text {
+  margin: 100px 40px 0px 40px;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  text-align: center;
+  text-rendering: optimize-legibility;
+  letter-spacing: 2px;
+  line-height: 30px; }
+
+.home-link-headline {
+  text-align: center;
+  margin-top: 50px; }
+
+.home-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none; }
+
+.home-video-link {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black; }
+
+.logo-container {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.logo {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+/*   ABOUT CONTENT    */
+.about-main-headline {
+  margin-left: 100px; }
+
+.about-content {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1rem; }
+
+.testimonial-headline {
+  margin-top: 100px;
+  text-align: center; }
+
+.testimonials {
+  text-align: center;
+  display: flex;
+  flex-direction: row; }
+
+.test-text {
+  font-size: 1rem;
+  margin: 0px 50px 50px 50px; }
+
+/*   WORK   PRESENTATIONS    */
+/*    CONTACT    */
+.contact-main-headline {
+  text-align: center; }
+
+.contact-sub-headline {
+  margin-left: 100px;
+  text-align: center; }
+
+.contact-form {
+  margin-left: 100px; }
+
+/*# sourceMappingURL=main.css.map */

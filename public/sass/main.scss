@@ -1,0 +1,159 @@
+@import 'helpers/all';
+
+* {
+	/*outline: 1px dotted blue;*/
+	box-sizing: border-box;
+}
+/*html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}*/
+.main-headline {
+	padding-left: 50px;
+	font-size: 3rem;
+}
+.navbar {
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.navlist {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 28px;
+}
+.nav-link-cont {
+	height: 30px;
+	width: 150px;
+	text-align: center;
+	border: 2px solid black;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.nav-link {
+	padding-top: 5px;
+	font-family: sans-serif;
+	font-size: 1.3rem;
+	color: black;
+	text-decoration: none;
+}
+/*    HOME CONTENT    */
+.clarity-container {
+	height: 300px;
+	width: 100%;
+	background: url("http://www.torange.us/photo/20/13/Clear-sky-1363594685_18.jpg");
+	background-repeat: no-repeat;
+	border-top: 2px solid hsl(185, 82%, 22%);
+	border-bottom: 2px solid hsl(185, 82%, 22%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.home-clarity {
+	margin: 0 auto;
+	height: 150px;
+}
+.home-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+.home-sub-headline-cont {
+	margin-top: 100px;
+}
+.home-sub-headline {
+	margin-left: 135px;
+}
+.home-photo-block {
+	float: left;
+}
+.home-text-block {
+	width: 50%;
+	float: right;
+}
+.home-main-text {
+	margin: 100px 40px 0px 40px;
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	text-align: center;
+	text-rendering: optimize-legibility;
+	letter-spacing: 2px;
+	line-height: 30px;
+}
+.home-link-headline {
+	text-align: center;
+	margin-top: 50px;
+}
+.home-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+}
+.home-video-link {
+	margin-left: 10px;
+	margin-right: 10px;
+	color: black;
+}
+.logo-container {
+	clear: both;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.logo {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+/*   ABOUT CONTENT    */
+.about-main-headline {
+	margin-left: 100px;
+}
+.about-content {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1rem;
+}
+.testimonial-headline {
+	margin-top: 100px;
+	text-align: center;
+}
+.testimonials {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+.test-text {
+	font-size: 1rem;
+	margin: 0px 50px 50px 50px;
+}
+
+/*   WORK   PRESENTATIONS    */
+
+
+
+
+/*    CONTACT    */
+.contact-main-headline {
+	text-align: center;
+}
+.contact-sub-headline {
+	margin-left: 100px;
+	text-align: center;
+}
+.contact-form {
+	margin-left: 100px;
+}
