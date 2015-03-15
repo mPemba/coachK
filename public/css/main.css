@@ -1,81 +1,509 @@
-/*
-Error: Invalid CSS after "$headline: ": expected expression (e.g. 1px, bold), was ";"
-        on line 1 of helpers/variables.scss
-        from line 1 of helpers/_all.scss
-        from line 1 of main.scss
+/*! normalize.css v1.0.0 | MIT License | git.io/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
 
-1: $headline: ;
-2: $body-text: ;
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
 
-Backtrace:
-helpers/variables.scss:1
-helpers/_all.scss:1
-main.scss:1
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:1165:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/script/lexer.rb:221:in `expected!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/script/parser.rb:573:in `assert_expr'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/script/parser.rb:62:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:1027:in `sass_script'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:607:in `variable'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:660:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:650:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/engine.rb:393:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/engine.rb:299:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: .83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: .75em;
+  margin: 2.33em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+p, pre {
+  margin: 1em 0; }
+
+code, kbd, pre, samp {
+  font-family: monospace,serif;
+  _font-family: 'courier new',monospace;
+  font-size: 1em; }
+
+pre {
   white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"$headline: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 1 of helpers/variables.scss\A         from line 1 of helpers/_all.scss\A         from line 1 of main.scss\A \A 1: $headline: ;\A 2: $body-text: ;"; }
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 75%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+dl, menu, ol, ul {
+  margin: 1em 0; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+menu, ol, ul {
+  padding: 0 0 0 40px; }
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+form {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  /*outline: 1px dotted blue;*/
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: #ebf4f9; }
+
+.main-headline {
+  text-rendering: optimize-legibility;
+  font-kerning: normal;
+  padding-left: 50px;
+  font-size: 3rem;
+  font-family: "Lustria", serif;
+  color: #203250; }
+
+.social-header {
+  float: right;
+  display: flex;
+  flex-direciton: row; }
+
+.social-header-link {
+  padding: 0px 10px 0px 10px;
+  color: #203250; }
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 28px; }
+
+.nav-link-cont {
+  text-align: center;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-right: 5px;
+  margin-left: 5px; }
+
+.nav-link {
+  border: 2px solid #203250;
+  height: 30px;
+  width: 150px;
+  padding-top: 3px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #203250;
+  text-decoration: none; }
+
+.nav-link:hover {
+  color: #ebf4f9;
+  background: #203250;
+  cursor: pointer; }
+
+.foot {
+  margin-top: 150px;
+  margin-bottom: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.foot-text {
+  color: #203250;
+  font-family: "Lustria", serif; }
+
+.footer-link {
+  /*margin: 0 auto;*/
+  margin-right: 20px;
+  margin-left: 5px;
+  color: #203250; }
+
+/*    HOME CONTENT    */
+.clarity-container {
+  height: 300px;
+  width: 100%;
+  background: url("http://www.torange.us/photo/20/13/Clear-sky-1363594685_18.jpg");
+  background-repeat: no-repeat;
+  border-top: 2px solid #0a5e66;
+  border-bottom: 2px solid #0a5e66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center; }
+
+.home-clarity {
+  margin: 0 auto;
+  height: 150px; }
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%; }
+
+.home-sub-headline-cont {
+  margin-top: 100px; }
+
+.home-sub-headline {
+  margin-left: 95px;
+  font-family: "Lustria", serif;
+  color: #203250;
+  font-kerning: normal;
+  text-rendering: optimize-legibility; }
+
+.home-photo-block {
+  float: left; }
+
+.home-text-block {
+  width: 50%;
+  float: right; }
+
+.home-main-text {
+  margin: 100px 40px 0px 40px;
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+  color: #203250;
+  text-align: center;
+  text-rendering: optimize-legibility;
+  letter-spacing: 2px;
+  line-height: 30px; }
+
+.home-link-headline {
+  text-align: center;
+  margin-top: 50px;
+  color: #203250;
+  font-family: "Lustria", serif; }
+
+.home-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none; }
+
+.home-video-link {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #00a4b3; }
+
+.logo-container {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.logo {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.home-testemonials {
+  text-align: center;
+  display: flex;
+  flex-direction: row; }
+
+.home-test-cont {
+  padding: 10px 10px 10px 10px;
+  font-size: 1rem; }
+
+.home-test-text {
+  font-family: "Lato", sans-serif;
+  color: #203250;
+  font-size: 1.2rem;
+  line-height: 25px;
+  font-kerning: normal;
+  text-rendering: optimize-legibility; }
+
+.mission-container {
+  margin: 0 auto; }
+
+.mission-headline {
+  text-align: center;
+  font-family: "Lustria", serif;
+  color: #203250; }
+
+.mission-statement {
+  text-align: center;
+  padding: 0px 50px 0px 50px;
+  color: #203250;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-kerning: normal;
+  text-rendering: optimize-legibility; }
+
+/*   ABOUT CONTENT    */
+.about-main-headline {
+  text-align: center;
+  font-family: "Lustria", serif;
+  color: #203250; }
+
+.about-content {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  color: #203250;
+  font-kerning: normal;
+  text-rendering: optimize-legibility;
+  line-height: 25px;
+  letter-spacing: 1.5px; }
+
+.testimonial-headline {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Lustria", serif;
+  color: #203250; }
+
+.testimonials {
+  text-align: center;
+  display: flex;
+  flex-direction: row; }
+
+.test-text {
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  font-kerning: normal;
+  text-rendering: optimize-legibility;
+  color: #203250;
+  margin: 0px 50px 50px 50px;
+  line-height: 25px;
+  letter-spacing: 1.5px; }
+
+/*   WORK   PRESENTATIONS    */
+.work-content {
+  margin: 50px 200px 0px 100px; }
+
+.work-sub-headline {
+  margin-left: 35px;
+  font-family: "Lustria", serif;
+  color: #203250; }
+
+.speaker-list {
+  list-style-type: none; }
+
+.speaker-program-headline {
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: #203250; }
+
+.speaker-programs-text {
+  color: #203250;
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-rendering: optimize-legibility;
+  border-left: 2px solid #203250;
+  padding-left: 15px; }
+
+.presentation-headline {
+  margin-top: 100px;
+  margin-left: 40px;
+  text-align: center;
+  font-family: "Lustria", serif;
+  color: #203250; }
+
+.pres-list {
+  list-style-type: none;
+  text-align: center;
+  line-height: 25px;
+  font-family: "Lato", sans-serif;
+  color: #203250; }
+
+.pres-list-item {
+  font-size: 1.2rem; }
+
+/*    CONTACT    */
+.contact-main-headline {
+  text-align: center;
+  font-family: "Lustria", serif;
+  color: #203250; }
+
+.contact-sub-headline {
+  text-align: center;
+  font-family: "Lustria", serif;
+  color: #203250;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem; }
+
+.contact-form {
+  text-align: center; }
+
+.contact-input {
+  background: none;
+  border: 2px solid #203250;
+  font-family: "Lato", sans-serif;
+  height: 30px;
+  width: 150px;
+  color: #203250;
+  margin: 5px 0px 5px 0px; }
+
+.contact-message {
+  text-align: top;
+  background: none;
+  border: 2px solid #203250;
+  font-family: "Lato", sans-serif;
+  height: 100px;
+  width: 500px;
+  color: #203250;
+  margin: 5px 0px 5px 0px; }
+
+.contact-submit {
+  height: 30px;
+  width: 150px;
+  background: none;
+  border: 2px solid #203250; }
+
+/*# sourceMappingURL=main.css.map */
