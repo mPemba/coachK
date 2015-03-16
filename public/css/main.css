@@ -421,6 +421,13 @@ html, body {
   line-height: 25px;
   letter-spacing: 1.5px; }
 
+.about-photo-cont {
+  display: flex;
+  justify-content: center; }
+
+.about-photo {
+  height: 900px; }
+
 /*   WORK   PRESENTATIONS    */
 .work-content {
   margin: 50px 200px 0px 100px; }
